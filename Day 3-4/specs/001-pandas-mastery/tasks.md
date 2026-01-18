@@ -1,5 +1,4 @@
 ---
-
 description: "Task list for Pandas Mastery Module implementation"
 ---
 
@@ -20,16 +19,17 @@ description: "Task list for Pandas Mastery Module implementation"
 
 ## Path Conventions
 
-- **Educational project**: `notebooks/`, `data/`, `utils/` at repository root
-- **Paths adjusted** based on plan.md structure for educational notebooks
+- **Strict Directory Rule**: All project files (notebooks, data, utils, venv) MUST be created inside `Pandas-Mastery-Project/` directory
+- **No Root Files**: Do not create any files directly in the root of `Day 3-4/`
+- **Project Structure**: `Pandas-Mastery-Project/notebooks/`, `Pandas-Mastery-Project/data/`, `Pandas-Mastery-Project/utils/`
 
 ## Phase 1: Setup (Shared Infrastructure)
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan with notebooks/, data/, and utils/ directories
-- [ ] T002 Initialize Python project with pandas, matplotlib, seaborn dependencies in requirements.txt
-- [ ] T003 [P] Create requirements.txt with pandas, matplotlib, seaborn, jupyter dependencies
+- [ ] T001 Create project structure per implementation plan with Pandas-Mastery-Project/notebooks/, Pandas-Mastery-Project/data/, and Pandas-Mastery-Project/utils/ directories
+- [ ] T002 Initialize Python project with uv init command in Pandas-Mastery-Project/ directory
+- [ ] T003 [P] Add pandas, matplotlib, seaborn, jupyter dependencies using uv add command in Pandas-Mastery-Project/
 
 ---
 
@@ -41,11 +41,11 @@ description: "Task list for Pandas Mastery Module implementation"
 
 Foundational tasks for educational project:
 
-- [ ] T004 Download or prepare sample datasets (titanic.csv) in data/ directory
-- [ ] T005 [P] Create utils.py with helper functions for data processing
-- [ ] T006 [P] Set up README.md with project overview and instructions
-- [ ] T007 Create data validation functions in utils.py
-- [ ] T008 Configure environment setup instructions in quickstart.md
+- [ ] T004 Create Pandas-Mastery-Project/ directory and navigate to it
+- [ ] T005 [P] Download or prepare sample datasets (titanic.csv) in Pandas-Mastery-Project/data/ directory
+- [ ] T006 [P] Create utils.py with helper functions for data processing in Pandas-Mastery-Project/utils/
+- [ ] T007 Create data validation functions in Pandas-Mastery-Project/utils/utils.py
+- [ ] T008 Configure environment setup instructions in Pandas-Mastery-Project/quickstart.md
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -59,15 +59,15 @@ Foundational tasks for educational project:
 
 ### Implementation for User Story 1
 
-- [ ] T009 [P] [US1] Create pandas_fundamentals.ipynb notebook skeleton
-- [ ] T010 [P] [US1] Add Series creation examples to pandas_fundamentals.ipynb
-- [ ] T011 [P] [US1] Add DataFrame creation from dictionaries, lists, and arrays to pandas_fundamentals.ipynb
-- [ ] T012 [US1] Add indexing examples with loc and iloc to pandas_fundamentals.ipynb
-- [ ] T013 [US1] Add boolean masking examples to pandas_fundamentals.ipynb
-- [ ] T014 [US1] Add NaN handling examples (fill, drop) to pandas_fundamentals.ipynb
-- [ ] T015 [US1] Add groupby examples to pandas_fundamentals.ipynb
-- [ ] T016 [US1] Add pivot_table examples to pandas_fundamentals.ipynb
-- [ ] T017 [US1] Add exercises and practice problems to pandas_fundamentals.ipynb
+- [ ] T009 [P] [US1] Create pandas_fundamentals.ipynb notebook skeleton in Pandas-Mastery-Project/notebooks/
+- [ ] T010 [P] [US1] Add Series creation examples to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T011 [P] [US1] Add DataFrame creation from dictionaries, lists, and arrays to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T012 [US1] Add indexing examples with loc and iloc to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T013 [US1] Add boolean masking examples to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T014 [US1] Add NaN handling examples (fill, drop) to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T015 [US1] Add groupby examples to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T016 [US1] Add pivot_table examples to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
+- [ ] T017 [US1] Add exercises and practice problems to Pandas-Mastery-Project/notebooks/pandas_fundamentals.ipynb
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -81,14 +81,14 @@ Foundational tasks for educational project:
 
 ### Implementation for User Story 2
 
-- [ ] T018 [P] [US2] Create real_dataset_analysis.ipynb notebook skeleton
-- [ ] T019 [P] [US2] Add data loading and inspection code to real_dataset_analysis.ipynb
-- [ ] T020 [US2] Add data structure inspection using info() and describe() to real_dataset_analysis.ipynb
-- [ ] T021 [US2] Add missing value identification and column-appropriate cleaning to real_dataset_analysis.ipynb
-- [ ] T022 [US2] Add survival rate by gender calculation to real_dataset_analysis.ipynb
-- [ ] T023 [US2] Add numeric value distribution analysis to real_dataset_analysis.ipynb
-- [ ] T024 [US2] Add data visualization for key insights to real_dataset_analysis.ipynb
-- [ ] T025 [US2] Add summary and conclusions section to real_dataset_analysis.ipynb
+- [ ] T018 [P] [US2] Create real_dataset_analysis.ipynb notebook skeleton in Pandas-Mastery-Project/notebooks/
+- [ ] T019 [P] [US2] Add data loading and inspection code to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T020 [US2] Add data structure inspection using info() and describe() to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T021 [US2] Add missing value identification and column-appropriate cleaning to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T022 [US2] Add survival rate by gender calculation to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T023 [US2] Add numeric value distribution analysis to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T024 [US2] Add data visualization for key insights to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
+- [ ] T025 [US2] Add summary and conclusions section to Pandas-Mastery-Project/notebooks/real_dataset_analysis.ipynb
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -102,15 +102,15 @@ Foundational tasks for educational project:
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create COVID19_Analysis.ipynb notebook skeleton
-- [ ] T027 [P] [US3] Add COVID-19 data ingestion code to COVID19_Analysis.ipynb
-- [ ] T028 [US3] Add data preprocessing to group by Country/Region to COVID19_Analysis.ipynb
-- [ ] T029 [US3] Add time-series transformation to COVID19_Analysis.ipynb
-- [ ] T030 [US3] Add daily new cases calculation to COVID19_Analysis.ipynb
-- [ ] T031 [US3] Add top 5 countries identification to COVID19_Analysis.ipynb
-- [ ] T032 [US3] Add "Total Cases vs. Time" plot for top 5 countries to COVID19_Analysis.ipynb
-- [ ] T033 [US3] Add "Mortality Rate" (Deaths/Cases) plot for top countries to COVID19_Analysis.ipynb
-- [ ] T034 [US3] Add summary and insights section to COVID19_Analysis.ipynb
+- [ ] T026 [P] [US3] Create COVID19_Analysis.ipynb notebook skeleton in Pandas-Mastery-Project/notebooks/
+- [ ] T027 [P] [US3] Add COVID-19 data ingestion code to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T028 [US3] Add data preprocessing to group by Country/Region to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T029 [US3] Add time-series transformation to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T030 [US3] Add daily new cases calculation to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T031 [US3] Add top 5 countries identification to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T032 [US3] Add "Total Cases vs. Time" plot for top 5 countries to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T033 [US3] Add "Mortality Rate" (Deaths/Cases) plot for top countries to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
+- [ ] T034 [US3] Add summary and insights section to Pandas-Mastery-Project/notebooks/COVID19_Analysis.ipynb
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -120,11 +120,11 @@ Foundational tasks for educational project:
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] TXXX [P] Update README.md with instructions for all notebooks
-- [ ] TXXX Code cleanup and consistent styling across all notebooks
-- [ ] TXXX [P] Add error handling and validation to all notebooks
-- [ ] TXXX [P] Add detailed comments and explanations to all notebooks
-- [ ] TXXX Run quickstart.md validation to ensure all notebooks work as expected
+- [ ] TXXX [P] Update README.md in Pandas-Mastery-Project/ with instructions for all notebooks
+- [ ] TXXX Code cleanup and consistent styling across all Pandas-Mastery-Project/notebooks/
+- [ ] TXXX [P] Add error handling and validation to all Pandas-Mastery-Project/notebooks/
+- [ ] TXXX [P] Add detailed comments and explanations to all Pandas-Mastery-Project/notebooks/
+- [ ] TXXX Run Pandas-Mastery-Project/quickstart.md validation to ensure all notebooks work as expected
 
 ---
 
