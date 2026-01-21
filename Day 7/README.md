@@ -52,3 +52,4 @@ pytest --cov=. tests/
 - [x] Exercises implementations
 - [x] Testing suite
 - [x] Visualization tools
+- [x] Advanced Rosenbrock optimization

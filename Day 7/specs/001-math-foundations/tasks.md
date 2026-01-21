@@ -26,10 +26,10 @@ description: "Task list for Mathematics for Machine Learning Foundations impleme
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan in repository root
-- [ ] T002 Initialize Python project with NumPy, Matplotlib, SciPy, PyTest dependencies in pyproject.toml
-- [ ] T003 [P] Create directory structure: linear_algebra/, calculus/, probability/, optimization/, exercises/, tests/, outputs/plots/
-- [ ] T004 Create README.md with project overview and setup instructions
+- [X] T001 Create project structure per implementation plan in repository root
+- [X] T002 Initialize Python project with NumPy, Matplotlib, SciPy, PyTest dependencies in pyproject.toml
+- [X] T003 [P] Create directory structure: linear_algebra/, calculus/, probability/, optimization/, exercises/, tests/, outputs/plots/
+- [X] T004 Create README.md with project overview and setup instructions
 
 ---
 
@@ -39,10 +39,10 @@ description: "Task list for Mathematics for Machine Learning Foundations impleme
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create __init__.py files in all directories to make them Python packages
-- [ ] T006 [P] Create basic test framework in tests/conftest.py and basic test structure
-- [ ] T007 Create common utilities module for shared mathematical constants/functions in src/utils.py
-- [ ] T008 Set up pytest configuration with coverage requirements in pyproject.toml
+- [X] T005 Create __init__.py files in all directories to make them Python packages
+- [X] T006 [P] Create basic test framework in tests/conftest.py and basic test structure
+- [X] T007 Create common utilities module for shared mathematical constants/functions in utils.py
+- [X] T008 Set up pytest configuration with coverage requirements in pyproject.toml
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

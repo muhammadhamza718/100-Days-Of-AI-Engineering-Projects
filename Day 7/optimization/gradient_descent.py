@@ -44,7 +44,18 @@ def gradient_descent(
 
     for i in range(num_iterations):
         grad = gradient_fn(current_point)
+
+        # Add gradient clipping to prevent overflow for functions like Rosenbrock
+        grad_norm = np.linalg.norm(grad)
+        if grad_norm > 1000:  # clip large gradients
+            grad = grad * (1000 / grad_norm)
+
         current_point = current_point - learning_rate * grad
+
+        # Check for NaN or inf values and stop if found
+        if np.any(np.isnan(current_point)) or np.any(np.isinf(current_point)):
+            print(f"Warning: NaN or Inf encountered at iteration {i}. Stopping early.")
+            break
 
         path_points.append(current_point.copy())
         path_values.append(objective_fn(current_point))
