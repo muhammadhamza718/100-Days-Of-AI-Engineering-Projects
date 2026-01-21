@@ -1,0 +1,44 @@
+[project]
+name = "mathematics-for-ml"
+version = "0.1.0"
+description = "Mathematical foundations for Machine Learning implemented from scratch"
+authors = [{name = "AI Engineer", email = "engineer@example.com"}]
+dependencies = [
+    "numpy>=1.21.0",
+    "matplotlib>=3.5.0",
+    "scipy>=1.7.0",
+    "pytest>=7.0.0"
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-v"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["."]
+omit = [
+    "tests/*",
+    "history/*",
+    "*/__init__.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:"
+]
+precision = 2
+show_missing = true
+skip_covered = false
