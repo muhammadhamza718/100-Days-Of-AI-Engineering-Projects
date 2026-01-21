@@ -46,10 +46,12 @@ pytest --cov=. tests/
 
 - [x] Project structure and dependencies
 - [x] Gradient descent algorithm
-- [ ] Linear algebra operations
+- [x] Linear algebra operations
+- [x] Linear algebra exercises
 - [ ] Calculus operations
 - [ ] Probability distributions
 - [x] Exercises implementations
 - [x] Testing suite
+- [x] Test coverage (75.63%)
 - [x] Visualization tools
 - [x] Advanced Rosenbrock optimization
